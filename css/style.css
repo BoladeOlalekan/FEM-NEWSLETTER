@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  font-family: Roboto, "sans-serif";
+  font-size: 16px;
+  color: hsl(235, 18%, 26%);
+  font-weight: 700;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.mobile img {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.container-1 {
+  display: block;
+}
+.container-1 .updated {
+  margin: 2rem 1rem;
+}
+.container-1 .updated h1 {
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5rem;
+}
+.container-1 .updated p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+.container-1 .updated ul li {
+  list-style-type: none;
+  line-height: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container-1 .updated ul li::before {
+  content: "";
+  background-image: url(/images/icon-list.svg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  left: -2.5rem;
+}
+.container-1 .subscribe {
+  margin: 2rem 1rem;
+}
+.container-1 .subscribe form .address {
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 5px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-1 .subscribe form .address #error-msg {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+.container-1 .subscribe form .email-input {
+  width: 100%;
+  border: 0.5px solid hsl(231, 7%, 60%);
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 1rem;
+  color: hsl(235, 18%, 26%);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Roboto, "sans-serif";
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.container-1 .subscribe form .email-input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-1 .subscribe form .email-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-1 .subscribe form .email-input:focus {
+  border: 2px solid hsl(235, 18%, 26%);
+}
+.container-1 .subscribe form .submit-btn {
+  display: block;
+  width: 100%;
+  border: 1px solid hsl(234, 29%, 20%);
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 1rem;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Roboto, "sans-serif";
+  outline: none;
+  cursor: pointer;
+}
+.container-1 .subscribe form .submit-btn:hover {
+  background-image: linear-gradient(to right, hsl(4, 100%, 67%), #fe9341);
+  border-color: #fe9341;
+}
+
+.container-2 {
+  height: 85vh;
+}
+.container-2 div {
+  margin: 1rem;
+  position: relative;
+  top: 5rem;
+  height: 100%;
+}
+.container-2 div img {
+  margin-bottom: 1rem;
+}
+.container-2 div h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.container-2 div .successMsg {
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.container-2 footer {
+  margin: 1rem;
+}
+.container-2 footer .dismiss-btn {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Roboto, "sans-serif";
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  bottom: 1rem;
+}
+.container-2 footer .dismiss-btn:hover {
+  background-image: linear-gradient(to right, hsl(4, 100%, 67%), #fe9341);
+  border-color: #fe9341;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
