@@ -180,6 +180,27 @@
     }
 }
 
+.acknowledge{
+    text-align: center;
+    background-color: hsl(4, 100%, 67%);
+    padding: .8rem;
+    font-weight: 400;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 5rem auto -5rem auto;
+    
+    
+    p{
+        color: black;
+
+        a{
+            &:hover{
+                color: hsl(234, 29%, 20%);
+            }
+        } 
+    }
+}
+
 .hide{
     display: none;
 }
