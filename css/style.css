@@ -16,28 +16,28 @@
   display: none;
 }
 
-.container-1 {
+.cont-bcg .container-1 {
   display: block;
 }
-.container-1 .updated {
+.cont-bcg .container-1 .updated {
   margin: 2rem 1rem;
 }
-.container-1 .updated h1 {
+.cont-bcg .container-1 .updated h1 {
   font-weight: 700;
   color: hsl(234, 29%, 20%);
   font-size: 2.5rem;
 }
-.container-1 .updated p {
+.cont-bcg .container-1 .updated p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
-.container-1 .updated ul li {
+.cont-bcg .container-1 .updated ul li {
   list-style-type: none;
   line-height: 1.5rem;
   position: relative;
   margin-bottom: 1rem;
 }
-.container-1 .updated ul li::before {
+.cont-bcg .container-1 .updated ul li::before {
   content: "";
   background-image: url(/images/icon-list.svg);
   position: absolute;
@@ -46,10 +46,10 @@
   background-size: contain;
   left: -2.5rem;
 }
-.container-1 .subscribe {
+.cont-bcg .container-1 .subscribe {
   margin: 2rem 1rem;
 }
-.container-1 .subscribe form .address {
+.cont-bcg .container-1 .subscribe form .address {
   font-weight: 700;
   color: hsl(234, 29%, 20%);
   margin-bottom: 5px;
@@ -57,14 +57,14 @@
   display: flex;
   justify-content: space-between;
 }
-.container-1 .subscribe form .address #error-msg {
+.cont-bcg .container-1 .subscribe form .address #error-msg {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 13px;
   color: hsl(4, 100%, 67%);
   display: none;
 }
-.container-1 .subscribe form .email-input {
+.cont-bcg .container-1 .subscribe form .email-input {
   width: 100%;
   border: 0.5px solid hsl(231, 7%, 60%);
   border-radius: 8px;
@@ -77,18 +77,19 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.container-1 .subscribe form .email-input::-moz-placeholder {
+.cont-bcg .container-1 .subscribe form .email-input::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
 }
-.container-1 .subscribe form .email-input::placeholder {
+.cont-bcg .container-1 .subscribe form .email-input::placeholder {
   font-size: 16px;
   font-weight: 400;
 }
-.container-1 .subscribe form .email-input:focus {
+.cont-bcg .container-1 .subscribe form .email-input:focus {
   border: 2px solid hsl(235, 18%, 26%);
+  transition: 0.3s;
 }
-.container-1 .subscribe form .submit-btn {
+.cont-bcg .container-1 .subscribe form .submit-btn {
   display: block;
   width: 100%;
   border: 1px solid hsl(234, 29%, 20%);
@@ -101,10 +102,11 @@
   font-family: Roboto, "sans-serif";
   outline: none;
   cursor: pointer;
+  transition: 0.3s;
 }
-.container-1 .subscribe form .submit-btn:hover {
+.cont-bcg .container-1 .subscribe form .submit-btn:hover {
   background-image: linear-gradient(to right, hsl(4, 100%, 67%), #fe9341);
-  border-color: #fe9341;
+  border: none;
 }
 
 .container-2 {
@@ -155,4 +157,60 @@
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+    padding: 5rem;
+  }
+  body .cont-bcg {
+    background-color: white;
+    border-radius: 18px;
+    padding: 1rem;
+    height: 600px;
+    width: 750px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  body .cont-bcg .container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  body .cont-bcg .container-1 .mobile {
+    display: none;
+  }
+  body .cont-bcg .container-1 .desktop {
+    display: block;
+  }
+  body .cont-bcg .container-1 .desktop img {
+    width: 100%;
+    height: 100%;
+  }
+  body .container-2 {
+    background-color: white;
+    border-radius: 18px;
+    padding: 1rem;
+    height: 450px;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  body .container-2 div {
+    margin: 1rem;
+    position: relative;
+    top: 1rem;
+    height: 100%;
+  }
+  body .container-2 div img {
+    margin-bottom: 1rem;
+  }
+  body .container-2 footer .dismiss-btn {
+    position: relative;
+    top: -6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
