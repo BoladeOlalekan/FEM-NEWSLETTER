@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/BoladeOlalekan/FEM-NEWS_HOMEPAGE)
+- Solution URL: [Github](https://github.com/BoladeOlalekan/FEM-NEWSLETTER)
 - Live Site URL: [Netlify](https://success-fem-newsletter.netlify.app/)
 
 ### Built with
