@@ -229,4 +229,8 @@
     position: relative;
     top: -6rem;
   }
+  .acknowledge {
+    position: relative;
+    bottom: -10rem;
+  }
 }/*# sourceMappingURL=style.css.map */
